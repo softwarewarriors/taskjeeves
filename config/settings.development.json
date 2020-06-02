@@ -9,5 +9,40 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultTasks": [
+    {
+      "subject": "First Task",
+      "description": "First task description",
+      "owner": "john@foo.com",
+      "created": "Mon June 1 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "due": "Mon June 8 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "completed": false
+    },
+    {
+      "subject": "Second Task",
+      "description": "Second task description",
+      "owner": "john@foo.com",
+      "created": "Mon June 1 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "due": "Mon June 8 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "completed": true
+    },
+    {
+      "subject": "Third Task",
+      "description": "Third task description",
+      "owner": "admin@foo.com",
+      "created": "Mon June 1 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "due": "Mon June 8 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "completed": false
+    },
+    {
+      "subject": "Fourth Task",
+      "description": "Fourth task description",
+      "owner": "admin@foo.com",
+      "created": "Mon June 1 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "due": "Mon June 8 2020 14:53:32 GMT-1000 (Hawaii-Aleutian Standard Time)",
+      "completed": true
+    }
   ]
 }
