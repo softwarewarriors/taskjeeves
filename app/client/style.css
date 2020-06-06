@@ -1,0 +1,8 @@
+.landing-background {
+  background: url("/images/todolist.jpg") no-repeat center center fixed;
+  background-size: cover;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  height: 730px;
+}
