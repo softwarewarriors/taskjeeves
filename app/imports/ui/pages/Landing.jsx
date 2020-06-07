@@ -12,8 +12,13 @@ class Landing extends React.Component {
           </Grid.Column>
 
           <Grid.Column width={8}>
+<<<<<<< Updated upstream
             <h1>Welcome to Task Jeeves</h1>
             <p>Now get to work and make some tasks!</p>
+=======
+            <h1>Landing page test</h1>
+            <p>Now get to work and modify this app!</p>
+>>>>>>> Stashed changes
           </Grid.Column>
 
         </Grid>

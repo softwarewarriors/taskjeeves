@@ -1,0 +1,66 @@
+/*********************************************************************
+***************************** TERMS **********************************
+**********************************************************************/
+.terms-container {
+  padding-top: 50px;
+  overflow-y: visible;
+  margin-bottom: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.item, .item:active, .item:hover, .item:visited {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+.item-desc, .item-desc:active, .item-desc:hover, .item-desc:visited {
+  text-decoration: none;
+  line-height: 15pt;
+  font-size: 10pt;
+  margin: 10pt;
+}
+
+.terms-text, .terms-text:active, .terms-text:hover, .terms-text:visited {
+	color: #000000;
+	font-weight: 700;
+}
+/*********************************************************************
+*************************** SECURITY *********************************
+**********************************************************************/
+.security-link, .security-link:active, .security-link:hover, .security-link:visited {
+  color: #000000 !important;
+  text-decoration: underline;
+  line-height: 15pt;
+}
+
+.security-text, .security-text:active, .security-text:hover, .security-text:visited {
+	color: #000000;
+	font-weight: normal;
+}
+/*********************************************************************
+*************************** PRIVACY *********************************
+**********************************************************************/
+.privacy-text, .privacy-text:active, .privacy-text:hover, .privacy-text:visited {
+	color: #000000;
+	font-weight:700;
+}
+/*********************************************************************
+**************************** FOOTER **********************************
+**********************************************************************/
+footer {
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  background-color: #222222;
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-link, .footer-link:active, .footer-link:hover, .footer-link:visited {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
