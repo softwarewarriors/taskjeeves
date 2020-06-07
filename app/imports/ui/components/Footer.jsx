@@ -6,12 +6,6 @@ class Footer extends React.Component {
     const divStyle = { paddingTop: '15px' };
     return (
         <footer>
-<<<<<<< Updated upstream
-          <div style={divStyle} className="ui center aligned container">
-            <hr />
-              Software Warriors<br />
-            <a href="http://softwarewarriors.github.io/">Team Page</a>
-=======
           <div style={divStyle} className="ui transparent container">
 			  <hr/>
           <div style={divStyle} className="ui transparent two column stackable grid">
@@ -56,7 +50,6 @@ class Footer extends React.Component {
 			  </div>
 			  </div>
 			  </div>
->>>>>>> Stashed changes
           </div>
 		</div>
         </footer>
