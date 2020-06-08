@@ -22,7 +22,18 @@ Four ICS students at the University of Hawaii at Manoa.
 Check out our portfolios below! 
 * [Darlene Agbayani](https://darleneagbayani.github.io/)
 ```
-Responsible for ...
+- Assignment 1
+ - Requirements
+   - Security
+   - Privacy
+- Application Logo
+
+- Assignment 2
+ - Footer UI
+ - End User License Agreement
+ - Privacy Policy
+ - Security Policy
+
 ```
 * [Julian Kim](https://julianki-cs.github.io/)
 ```
