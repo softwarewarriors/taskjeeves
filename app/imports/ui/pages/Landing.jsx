@@ -36,11 +36,11 @@ class Landing extends React.Component {
             </Grid.Column>
 
           </Grid>
-
-
-
-
-
+        
+          <Grid.Column width={8}>
+            <h1>Welcome to Task Jeeves</h1>
+            <p>Now get to work and make some tasks!</p>
+          </Grid.Column>
         </div>
     );
   }
