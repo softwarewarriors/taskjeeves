@@ -33,19 +33,49 @@ Check out our portfolios below!
  - End User License Agreement
  - Privacy Policy
  - Security Policy
-
 ```
 * [Julian Kim](https://julianki-cs.github.io/)
 ```
 Responsible for ...
+- Assignment 1
+ - Threat Modeling 
+
+- Assignment 2
+ - Implementation 
+  - Approved Tools
+  - Static Analysis Tools
+ - TaskJeeves
+  - SignOut Page 
 ```
 * [Craig Opie](https://craigopie.github.io/)
 ```
-Responsible for ...
+- Assignment 1
+ - Document formatting
+ - Our Team version of the SDL
+ - Sceduled meetings / setup communication channels
+ - Quality Gates
+ - Risk Assessment
+ - Definitions
+
+- Assignment 2
+ - Setup GitHub for the Team
+ - Created issues for the team
+ - Created the two projects in GitHub (M1 and Security)
+ - Created the working backbone meteor app
+ - Created the GitHub Page
+ - Sceduled meetings / setup communication channels
+
 ```
 * [Joseph Paragas](https://joeparagas.github.io/)
 ```
 Responsible for ...
+- Assignment 1
+ - Design Requirements
+ - Attack Surface Analysis and Reduction
+ - Application Title
+ 
+- Assignment 2
+ - Landing Page UI 
 ```
 
 ## DOCUMENTS
