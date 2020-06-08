@@ -212,7 +212,11 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/landing-page.png)
+=======
+![](https://drive.google.com/open?id=1U8qUfwcdp9peNYKO45lVsZltPy-wxwu9)
+>>>>>>> Stashed changes
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -220,20 +224,32 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/signin-page.png)
+=======
+![](https://drive.google.com/open?id=1MM_DymkY5NtT3nK2rzkVyb4B7sVB81fz)
+>>>>>>> Stashed changes
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/register-page.png)
+=======
+![](https://drive.google.com/open?id=1TqIuVbDV1_cEnDMT2fLzYnJEZ8zinxSZ)
+>>>>>>> Stashed changes
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/landing-after-login-page.png)
+=======
+![](https://drive.google.com/open?id=1-tUIb6-hFg3kaJY78d_ugCiEQluEdz9D)
+>>>>>>> Stashed changes
 
 You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
 
@@ -241,13 +257,21 @@ You can now add new Stuff documents, and list the Stuff you have created. Note y
 
 After logging in, here is the page that allows you to add new Stuff:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/add-stuff-page.png)
+=======
+![](https://drive.google.com/open?id=1_uChTBdM3BDUNLrpfBUti82muJAU-Bdw)
+>>>>>>> Stashed changes
 
 #### List Stuff page
 
 After logging in, here is the page that allows you to list all the Stuff you have created:
 
+<<<<<<< Updated upstream
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/list-stuff-page.png)
+=======
+![](https://drive.google.com/open?id=1t9MlTXd2aQjK4ioAevNAbCkigbIavvKU)
+>>>>>>> Stashed changes
 
 You click the "Edit" link to go to the Edit Stuff page, shown next.
 
