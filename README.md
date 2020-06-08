@@ -249,14 +249,5 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
 
-### CSS
-
-The application uses the [React implementation of Semantic UI](http://react.semantic-ui.com/).
-
-### Routing
-
-For display and navigation among its four pages, the application uses [React Router](https://reacttraining.com/react-router/).
-
-Routing is defined in [imports/ui/layouts/App.jsx](https://github.com/softwarewarriors/taskjeeves/tree/master/app/imports/ui/layouts/App.jsx).
 
 [Back to table of contents](#table-of-contents)
