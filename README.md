@@ -25,63 +25,62 @@ Check out our portfolios below!
 ***
 
 - Assignment 1
- - Requirements
-   - Security
-   - Privacy
+    - Requirements
+        - Security
+        - Privacy
 - Application Logo
 
 - Assignment 2
- - Footer UI
- - End User License Agreement
- - Privacy Policy
- - Security Policy
+    - Footer UI
+    - End User License Agreement
+    - Privacy Policy
+    - Security Policy
  
  
 * [Julian Kim](https://julianki-cs.github.io/)
 ***
 
 - Assignment 1
- - Threat Modeling 
+- Threat Modeling 
 
 - Assignment 2
- - Implementation 
-  - Approved Tools
-  - Static Analysis Tools
- - TaskJeeves
-  - SignOut Page 
+    - Implementation 
+    - Approved Tools
+        - Static Analysis Tools
+- TaskJeeves
+    - SignOut Page 
   
   
 * [Craig Opie](https://craigopie.github.io/)
 ***
 
 - Assignment 1
- - Document formatting
- - Our Team version of the SDL
- - Sceduled meetings / setup communication channels
- - Quality Gates
- - Risk Assessment
- - Definitions
+    - Document formatting
+    - Our Team version of the SDL
+    - Sceduled meetings / setup communication channels
+    - Quality Gates
+    - Risk Assessment
+    - Definitions
 
 - Assignment 2
- - Setup GitHub for the Team
- - Created issues for the team
- - Created the two projects in GitHub (M1 and Security)
- - Created the working backbone meteor app
- - Created the GitHub Page
- - Sceduled meetings / setup communication channels
+    - Setup GitHub for the Team
+    - Created issues for the team
+    - Created the two projects in GitHub (M1 and Security)
+    - Created the working backbone meteor app
+    - Created the GitHub Page
+    - Sceduled meetings / setup communication channels
  
  
 * [Joseph Paragas](https://joeparagas.github.io/)
 ***
 
 - Assignment 1
- - Design Requirements
- - Attack Surface Analysis and Reduction
- - Application Title
+    - Design Requirements
+    - Attack Surface Analysis and Reduction
+    - Application Title
  
 - Assignment 2
- - Landing Page UI 
- 
+    - Landing Page UI 
 
 ## DOCUMENTS
 ***
