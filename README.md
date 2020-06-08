@@ -212,7 +212,7 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/Landing.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Landing.JPG)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -220,26 +220,26 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/SignIn.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/SignIn.JPG)
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/Register.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Register.JPG)
 
 
 #### Add Task page
 
 After logging in, here is the page that allows you to add new Tasks:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/AddStuff.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/AddStuff.JPG)
 
 #### List Tasks page
 
 After logging in, here is the page that allows you to list all the Tasks you have created:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/Tasks.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Tasks.JPG)
 
 You click the "Edit" link to go to the Edit Task page, shown next.
 
@@ -247,7 +247,7 @@ You click the "Edit" link to go to the Edit Task page, shown next.
 
 After clicking on the "Edit" link associated with a task, this page displays that allows you to change and save it:
 
-![](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/Edit.JPG)
+![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
 
 ### CSS
 
