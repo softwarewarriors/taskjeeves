@@ -1,9 +1,31 @@
 .landing-background {
-  background: url("/images/todolist.jpg") no-repeat center center fixed;
+  background: url("/images/todolist.jpg") no-repeat center content-box;
   background-size: cover;
-  margin-top: fill;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  height: 630px;
+  height: 635px;
+  color: white;
 }
+
+.landing-background-icon{
+  padding-top: 35%;
+  padding-left: 0px;
+  padding-bottom: 10%;
+  font-size: xx-large;
+  color: dodgerblue ;
+}
+
+
+.landing-background img{
+  padding-top: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.landing-background p {
+  padding-top: 10%;
+  padding-left: 35px;
+  padding-right: 60px;
+  font-size: x-large;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
