@@ -20,8 +20,10 @@ Assignments:
 ***
 Four ICS students at the University of Hawaii at Manoa.  
 Check out our portfolios below! 
+
 * [Darlene Agbayani](https://darleneagbayani.github.io/)
-```
+***
+
 - Assignment 1
  - Requirements
    - Security
@@ -33,10 +35,11 @@ Check out our portfolios below!
  - End User License Agreement
  - Privacy Policy
  - Security Policy
-```
+ 
+ 
 * [Julian Kim](https://julianki-cs.github.io/)
-```
-Responsible for ...
+***
+
 - Assignment 1
  - Threat Modeling 
 
@@ -46,9 +49,11 @@ Responsible for ...
   - Static Analysis Tools
  - TaskJeeves
   - SignOut Page 
-```
+  
+  
 * [Craig Opie](https://craigopie.github.io/)
-```
+***
+
 - Assignment 1
  - Document formatting
  - Our Team version of the SDL
@@ -64,11 +69,11 @@ Responsible for ...
  - Created the working backbone meteor app
  - Created the GitHub Page
  - Sceduled meetings / setup communication channels
-
-```
+ 
+ 
 * [Joseph Paragas](https://joeparagas.github.io/)
-```
-Responsible for ...
+***
+
 - Assignment 1
  - Design Requirements
  - Attack Surface Analysis and Reduction
@@ -76,7 +81,7 @@ Responsible for ...
  
 - Assignment 2
  - Landing Page UI 
-```
+ 
 
 ## DOCUMENTS
 ***
