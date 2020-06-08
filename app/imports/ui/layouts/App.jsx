@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import 'semantic-ui-css/semantic.css';
 import { Roles } from 'meteor/alanning:roles';
-import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
+import Terms from '../pages/Terms';
+import Privacy from '../pages/Privacy';
+import Security from '../pages/Security';
 import ListStuff from '../pages/ListStuff';
 import ListTaskers from '../pages/ListTaskers';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
@@ -29,6 +32,9 @@ class App extends React.Component {
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
+              <Route path="/terms" component={Terms}/>
+              <Route path="/privacy" component={Privacy}/>
+              <Route path="/security" component={Security}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/tasks" component={ListTaskers}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
