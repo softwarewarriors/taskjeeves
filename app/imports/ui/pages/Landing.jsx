@@ -1,27 +1,47 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Header, Image, Icon } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
     return (
-        <Grid verticalAlign='middle' textAlign='center' container>
-
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/logo_sq.png"/>
+        <div className='landing-background'>
+          <Grid container centered columns = {3}>
+          <Grid.Column>
+            <Image src="images/TASK JEEVES LOGO.png"/>
           </Grid.Column>
+          </Grid>
 
+          <Grid columns={3}>
+            <Grid.Column textAlign='center'>
+              <div className='landing-background-icon'>
+              <Icon size='huge' name='address card'/>
+              <Header as='h1' inverted>SIGN UP FOR AN ACCOUNT</Header>
+              </div>
+            </Grid.Column>
+
+
+            <Grid.Column textAlign='center'>
+              <div className='landing-background-icon'>
+                <Icon size='huge' name='user'/>
+                <Header as='h1' inverted>CREATE YOUR PROFILE</Header>
+              </div>
+            </Grid.Column>
+
+            <Grid.Column textAlign='center'>
+              <div className='landing-background-icon'>
+                <Icon size='huge' name='tasks'/>
+                <Header as='h1' inverted>GET TO WORK AND MANAGE YOUR TASKS</Header>
+              </div>
+            </Grid.Column>
+
+          </Grid>
+        
           <Grid.Column width={8}>
-<<<<<<< Updated upstream
             <h1>Welcome to Task Jeeves</h1>
             <p>Now get to work and make some tasks!</p>
-=======
-            <h1>Landing page test</h1>
-            <p>Now get to work and modify this app!</p>
->>>>>>> Stashed changes
           </Grid.Column>
-
-        </Grid>
+        </div>
     );
   }
 }
