@@ -5,42 +5,59 @@ import { Grid, Header, Image, Icon } from 'semantic-ui-react';
 class Landing extends React.Component {
   render() {
     return (
-        <div className='landing-background'>
-          <Grid container centered columns = {3}>
-          <Grid.Column>
-            <Image src="images/TASK JEEVES LOGO.png"/>
-          </Grid.Column>
-          </Grid>
-
-          <Grid columns={3}>
-            <Grid.Column textAlign='center'>
-              <div className='landing-background-icon'>
-              <Icon size='huge' name='address card'/>
-              <Header as='h1' inverted>SIGN UP FOR AN ACCOUNT</Header>
-              </div>
-            </Grid.Column>
-
-
-            <Grid.Column textAlign='center'>
-              <div className='landing-background-icon'>
-                <Icon size='huge' name='user'/>
-                <Header as='h1' inverted>CREATE YOUR PROFILE</Header>
-              </div>
-            </Grid.Column>
-
-            <Grid.Column textAlign='center'>
-              <div className='landing-background-icon'>
-                <Icon size='huge' name='tasks'/>
-                <Header as='h1' inverted>GET TO WORK AND MANAGE YOUR TASKS</Header>
-              </div>
-            </Grid.Column>
-
-          </Grid>
-        
-          <Grid.Column width={8}>
-            <h1>Welcome to Task Jeeves</h1>
-            <p>Now get to work and make some tasks!</p>
-          </Grid.Column>
+        <div className='landing-body1'>
+          <div class="ui fluid container landing-body">
+			  <div class="ui center aligned one column grid">
+			  <div class="ui center aligned row logo-row">
+            <img class="ui medium image" src="images/TASK JEEVES LOGO.png"/>
+				  </div>
+			  </div>
+			  </div>
+          <div class="ui container landing-content">
+			  <div class="ui one column grid">
+			  <div class="ui center aligned row">
+				  <div class="ui column">
+					  <h1 class="landing-header">Here's how to get started</h1>
+				  </div>
+				  </div>
+			  </div>
+			  <div class="ui center aligned three column stackable grid">
+			  <div class="ui center aligned row">
+				  </div>
+				<div class="ui center aligned row">
+				  <div class="ui center aligned column">
+					  <div class="ui one column stackable grid">
+						  <div class="ui column">
+            <img class="ui small centered image" src="images/signup-icon.png"/>
+							  </div>
+						  <div class="ui column">
+							  <h2 class="landing-header2">CREATE AN ACCOUNT</h2>
+						  </div>
+						  </div>
+					</div>
+				  <div class="ui center aligned column">
+					  <div class="ui one column stackable grid">
+						  <div class="ui column">
+            <img class="ui small centered image" src="images/profile-icon.png"/>
+						  </div>
+						  <div class="ui column">
+					  <h2 class="landing-header2">EDIT YOUR PROFILE</h2>
+						  </div>
+					  </div>
+					</div>
+				  <div class="ui center aligned column">
+					  <div class="ui one column stackable grid">
+						  <div class="ui column">
+            <img class="ui small centered image" src="images/tasks-icon.png"/>
+						  </div>
+						  <div class="ui column">
+					  <h2 class="landing-header2">MANAGE YOUR TASKS</h2>
+						  </div>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			</div>
         </div>
     );
   }
