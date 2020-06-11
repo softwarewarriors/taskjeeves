@@ -5,12 +5,9 @@ const Terms = () => {
 	return (
 <div class="ui very padded container terms-container">
   <div class="ui one column stackable grid">
-    <div class="ui row">
-      <div class="ui center aligned column"> <img src="/images/logo.png"/> </div>
-    </div>
     <div class="ui centered row">
       <div class="ui center aligned twelve wide column">
-        <h1>SECURITY POLICY</h1>
+        <h2 class="policy-header2">SECURITY POLICY</h2>
         <hr/>
         <br/>
       </div>
