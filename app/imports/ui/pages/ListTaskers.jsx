@@ -17,8 +17,8 @@ class ListTaskers extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Card.Group centered>
+        <Container style={{height:'110vh'}}>
+          <Card.Group centered style={{paddingTop:'20vh'}}>
             <Card fluid>
               <Card.Content>
                 <Card.Header textAlign='center'>My Tasks</Card.Header>
