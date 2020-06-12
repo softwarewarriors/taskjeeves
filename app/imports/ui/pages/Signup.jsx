@@ -39,14 +39,15 @@ class Signup extends React.Component {
       return <Redirect to={from}/>;
     }
     return (
-      <Container>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Register your account
-            </Header>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
+      <Container height="100vh" style={{ margin: '0px', width: '100%', height: '110vh', backgroundColor: 'white', backgroundSize: 'cover', backgroundImage: `url(${"/images/signup-background.jpg"})` }}>
+  <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+          <Grid.Column style={{ paddingTop: '30vh'}}>
+      <Message
+      attached
+      header='Welcome to our site!'
+      content='Fill out the form below to sign-up for a new account'
+    />
+      <Form className='attached fluid segment' onSubmit={this.submit}>
                 <Form.Input
                   label="Email"
                   icon="user"
@@ -65,12 +66,14 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
-              </Segment>
+        <Grid>
+          <Grid.Column textAlign="center">
+            <Form.Button style={{borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff'}} content="Submit"/>
+          </Grid.Column>
+        </Grid>
             </Form>
-            <Message>
-              Already have an account? Login <Link to="/signin">here</Link>
-            </Message>
+      <Message attached='bottom' info> Already have an account? Click&nbsp;<Link to="/signin">here</Link>
+        &nbsp;to sign in. </Message>
             {this.state.error === '' ? (
               ''
             ) : (

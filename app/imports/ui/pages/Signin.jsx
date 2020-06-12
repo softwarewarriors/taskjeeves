@@ -38,19 +38,22 @@ export default class Signin extends React.Component {
     const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
-      return <Redirect to={from}/>;
+      return
+    <Redirect to={from}/>
+;
     }
     // Otherwise return the Login form.
     return (
-      <Container>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Login to your account
-            </Header>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Form.Input
+<Container height="100vh" style={{ margin: '0px', width: '100%', height: '110vh', backgroundColor: 'white', backgroundSize: 'cover', backgroundImage: `url(${"/images/signin-background.jpg"})` }}>
+  <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+    <Grid.Column style={{ paddingTop: '30vh'}}>
+      <Message
+      attached
+      header='Welcome back!'
+      content='Input your email and password to login to your account.'
+    />
+      <Form className='attached fluid segment' onSubmit={this.submit}>
+        <Form.Input
                   label="Email"
                   icon="user"
                   iconPosition="left"
@@ -59,7 +62,7 @@ export default class Signin extends React.Component {
                   placeholder="E-mail address"
                   onChange={this.handleChange}
                 />
-                <Form.Input
+        <Form.Input
                   label="Password"
                   icon="lock"
                   iconPosition="left"
@@ -68,29 +71,33 @@ export default class Signin extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
-              </Segment>
-            </Form>
-            <Message>
-              <Link to="/signup">Click here to Register</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
+        <Grid>
+          <Grid.Column textAlign="center">
+            <Form.Button style={{borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff'}} content="Submit"/>
+          </Grid.Column>
+        </Grid>
+      </Form>
+      <Message attached='bottom' info> Don't have an account yet? Click&nbsp;
+        <Link to="/signup">
+        here
+        </Link>
+        &nbsp;to register instead. </Message>
+      {this.state.error === '' ? (
+      ''
+      ) : (
+      <Message
                 error
                 header="Login was not successful"
                 content={this.state.error}
               />
-            )}
-          </Grid.Column>
-        </Grid>
-      </Container>
-    );
+      )} </Grid.Column>
+  </Grid>
+</Container>
+);
   }
 }
 
 /** Ensure that the React Router location object is available in case we need to redirect. */
 Signin.propTypes = {
   location: PropTypes.object,
-};
+}; 
