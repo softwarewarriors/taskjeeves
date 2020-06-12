@@ -45,7 +45,7 @@ class AddTask extends React.Component {
       attached
       header='Add Task'
 		  content='Input information for subject, description and date for your new task.'
-    />
+    style={{fontFamily: 'Questrial'}}/>
 			  <AutoForm className='attached fluid segment' ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
                 <TextField name='subject'/>

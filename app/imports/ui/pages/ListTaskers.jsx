@@ -21,8 +21,9 @@ class ListTaskers extends React.Component {
           <Card.Group centered style={{paddingTop:'20vh'}}>
             <Card fluid>
               <Card.Content>
-                <Card.Header textAlign='center'>My Tasks</Card.Header>
+                <Card.Header className="tasksHeader">My Tasks</Card.Header>
               </Card.Content>
+    		<Card.Content><Card.Description>You are currently viewing your tasks. Choose to edit or mark your tasks as completed.</Card.Description></Card.Content>
               <Card.Content extra>
                 <Segment.Group>
                   {this.props.tasks
