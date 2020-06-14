@@ -3,19 +3,22 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /** Define a Mongo collection to hold the data. */
-const AccountData = new Mongo.Collection('Account');
+const Stuffs = new Mongo.Collection('Stuffs');
 
 /** Define a schema to specify the structure of each document in the collection. */
-const AccountSchema = new SimpleSchema({
+const StuffSchema = new SimpleSchema({
   name: String,
-  email: String,
-  bio: { type: String, optional: true, defaultValue: '' },
-  hobbies: { type: Array, optional: true },
-
+  quantity: Number,
+  owner: String,
+  condition: {
+    type: String,
+    allowedValues: ['excellent', 'good', 'fair', 'poor'],
+    defaultValue: 'good',
+  },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
-AccountData.attachSchema(AccountSchema);
+Stuffs.attachSchema(StuffSchema);
 
 /** Make the collection and schema available to other code. */
-export { AccountData, AccountSchema };
+export { Stuffs, StuffSchema };
