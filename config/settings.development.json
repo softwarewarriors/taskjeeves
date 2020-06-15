@@ -4,6 +4,11 @@
     { "email": "john@foo.com", "password": "changeme" }
   ],
 
+  "defaultUsers": [
+    { "email": "admin@foo.com", "firstName": "Admin", "lastName": "Admin", "address": "1680 East West Road, Honolulu, HI 96822" },
+    { "email": "john@foo.com", "firstName": "John", "lastName": "Snow", "address": "1680 East West Road, Honolulu, HI 96822" }
+  ],
+
   "defaultData": [
     { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
