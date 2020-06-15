@@ -327,7 +327,12 @@ https://github.com/softwarewarriors/taskjeeves
 ***
 
 ##### New Completions
+- UI for Create Profile page
 
 ##### Current
+- Directing Create Profile page to Profile page
+- User Profile Page design/format
+- Edit Profile feature
 
 ##### Next
+- UI for the Edit Page
