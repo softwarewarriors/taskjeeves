@@ -7,6 +7,7 @@
 * [INSTALLATION](#installation)
 * [RUNNING THE SYSTEM](#running-the-system)
 * [WALKTHROUGH](#walkthrough)
+* [UPDATES] - 06/07/2020 - 06/14/2020 (#updates)
 
 ## OVERVIEW
 ***
@@ -251,3 +252,5 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 
 [Back to table of contents](#table-of-contents)
+
+## Updates - 06/07/2020 - 06/14/2020
