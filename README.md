@@ -7,7 +7,7 @@
 * [INSTALLATION](#installation)
 * [RUNNING THE SYSTEM](#running-the-system)
 * [WALKTHROUGH](#walkthrough)
-* [UPDATES] - 06/07/2020 - 06/14/2020 (#updates)
+* [UPDATES] (#updates)
 
 ## OVERVIEW
 ***
