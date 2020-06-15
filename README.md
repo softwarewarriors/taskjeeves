@@ -7,7 +7,7 @@
 * [INSTALLATION](#installation)
 * [RUNNING THE SYSTEM](#running-the-system)
 * [WALKTHROUGH](#walkthrough)
-* [UPDATES] (#updates)
+* [UPDATES](#updates)
 
 ## OVERVIEW
 ***
