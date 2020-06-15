@@ -7,7 +7,6 @@
 * [INSTALLATION](#installation)
 * [RUNNING THE SYSTEM](#running-the-system)
 * [WALKTHROUGH](#walkthrough)
-* [UPDATES](#updates) - 06/07/2020 - 06/14/2020
 
 ## OVERVIEW
 ***
@@ -48,7 +47,6 @@ Check out our portfolios below!
     - Implementation 
     - Approved Tools
         - Static Analysis Tools
-- TaskJeeves
     - SignOut Page 
   
   
@@ -90,6 +88,8 @@ Check out our portfolios below!
 
 ## PROGRESS + DEVELOPMENT
 ***
+* [Task Jeeves Deployment](https://taskjeeves.meteorapp.com/)
+
 Track the team's progress via Milestones:
 * [Security](https://github.com/softwarewarriors/taskjeeves/projects/2)
 * [First Milestone](https://github.com/softwarewarriors/taskjeeves/projects/4)
@@ -105,7 +105,93 @@ Task Jeeves is a Meteor application that illustrates:
 
 The goal of this application is to demonstrate a Meteor development providing a secure directory structure for development and deployment, a set of common extensions to the core framework, and a basic application to implement basic page display, navigation, forms, roles, and collection manipulation.
 
-## Installation
+### Update 06/07/2020 - 06/14/2020
+- Progress: 
+    - User passwords are now protected using hash and salting algorithm with bcrypt 
+    - Implemented a new user table to store personal information and to ensure the password is not passed when the user wants to update profile information
+    - Sessions are now ended when the user closes the tab or browser window
+    - User input for registration page now uses regular expressions to check if the information is valid and not using select characters that may introduce a vulnerability
+    - Deployed our web application for use at https://taskjeeves.meteorapp.com/
+    - Deployed Arachni on our site to evaluate vulnerabilities
+    - Updated content in the terms of service, security, and privacy policies
+    - Improved the UI of our site and created a new logo
+        - UI modified on landing page
+        - UI modified on sign up page
+        - UI modified on sign in page
+        - UI modified on list tasks page
+        - UI modified on add task page
+        - UI modified on edit task page
+        - UI modified on the footer
+        - Added date picker for items with dates
+        
+- Pending:
+    - Add regular expressions to all user input to prevent malicious entries
+    - Remove depreciated pages and references from the site
+    - Modify UI in navbar to remove email and replace with user's first name
+    - Add information about the app to the landing page
+    - Update formatting on the terms, security, and privacy pages
+    - Have user agree to terms when creating account
+    - Address security concerns identified in our Arachni evaluation
+    - Implement a way for the user to edit their profile
+    - Implement a way for the user to change their password
+    
+- Roles and Responsibilities:
+    - [Darlene Agbayani](https://darleneagbayani.github.io/)
+        - New Completions:
+            - New logo for the site
+            - Designed the color scheme/layout of the site
+            - Implemented UI changes to multiple pages
+            - Implemented new terms of use, security, and privacy policies
+            - Updated the footer to include new policies
+        - Current:
+            - Updating the security and privacy policies
+            - Update formatting on the terms, security, and privacy pages
+        - Next:
+            - Add information about the app to the landing page
+            - Modify UI in navbar to remove email and replace with user's first name
+    - [Julian Kim](https://julianki-cs.github.io/)
+        - New Completions:
+            - Completed redirect during sign out
+            - Implemented UI changes to sign out page
+            - Reviewed and approved pull requests
+            - Attack Surface Review
+        - Current:
+            - Update the UI for the sign out page
+            - Verifying functionality of the web application
+        - Next:
+            - Add regular expressions to all user input to prevent malicious entries
+            - Address security concerns identified in our Arachni evaluation
+    - [Craig Opie](https://craigopie.github.io/)
+        - New Completions:
+            - Made adjustments to the user session to terminate when closing the browser or tab
+            - Implemented a new table to store the user information without having to go the same table where the user's password is stored
+            - Implemented bcrypt to hash and salt the passwords to prevent being stored in plain text
+            - Implemented regular expressions to check for invalid characters during using input
+            - Deployed our web application to https://taskjeeves.meteorapp.com/
+            - Deployed Arachni to evaluate our web application's security
+            - Wrote the Dynamic Analysis portion of our report
+        - Current:
+            - Evaluating security concerns in accordance with the NVD and using the CVSS v3.1 calculation evaluation
+        - Next:
+            - Remove depreciated pages and references from our web application
+            - Have user agree to terms when creating account
+            - Address security concerns identified in our Arachni evaluation
+    - [Joseph Paragas](https://joeparagas.github.io/)
+        - New Completions:
+            - Reviewed and approved pull requests
+            - Reviewed the Dynamic Analysis portion of our report
+            - Implemented UI changes to langing page
+            - Implemented UI changes to the tasks page
+        - Current:
+            - Designing the user profile page
+            - Creating components to access user table
+            - Designing the user's edit profile feature
+        - Next:
+            - Implement a way for the user to edit their profile
+            - Implement a way for the user to change their password
+
+
+## INSTALLATION
 
 First, [install Meteor](https://www.meteor.com/install).
 
@@ -117,7 +203,7 @@ Fourth, cd into the app/ directory of your local copy of the repo, and install t
 $ meteor npm install
 ```
 
-## Running the system
+## RUNNING THE SYSTEM
 
 Once the libraries are installed, you can run the application by invoking the "start" script in the [package.json file](https://github.com/softwarewarriors/taskjeeves/tree/master/app/package.json):
 
@@ -144,7 +230,7 @@ I20180227-13:33:02.744(-10)?   Adding: Boogie Board (admin@foo.com)
 ```
 
 
-### Viewing the running app
+### VIEWING THE RUNNING APP LOCALLY
 
 If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/softwarewarriors/taskjeeves/tree/master/config/settings.development.json), or else register a new account.
 
@@ -156,7 +242,7 @@ You can verify that the code obeys our coding standards by running ESLint over t
 meteor npm run lint
 ```
 
-## Walkthrough
+## WALKTHROUGH
 
 The following sections describe the major features of this template.
 
@@ -252,87 +338,3 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 
 [Back to table of contents](#table-of-contents)
-
-## Updates
-
-06/07/2020 - 06/14/2020
-
-### Progress
-- New UI for landing page
-- New UI for sign in page
-- New UI for sign up page
-- New page to redirect sign in and sign up page to profile page
-- New UI for list tasks page
-- New UI for add tasks page
-- New UI for edit tasks page
-- Reviewing pull requests
-- Attack surface review
-
-### Link
-
-https://github.com/softwarewarriors/taskjeeves
-
-### Pending 
-- Add about information to landing page
-- Update terms, security and privacy pages to fix spacing
-- Change font in navbar
-- Fix spacing in Task List (between two tasks)
-- Replace user email in navbar with user name
-
-### Roles and responsibilities: 
-
-#### [Darlene Agbayani](https://darleneagbayani.github.io/)
-***
-
-##### New Completions
-- New UI for landing page
-- New UI for sign in page
-- New UI for sign up page
-- New UI for list tasks page
-- New UI for add tasks page
-- New UI for edit tasks page
-
-##### Current
-- Add about information to landing page
-
-##### Next
-- Update terms, security and privacy pages to fix spacing
-- Change font in navbar
-- Fix spacing in Task List (between two tasks)
-
-#### [Julian Kim](https://julianki-cs.github.io/)
-***
-
-##### New Completions
-- Signout page redirect
-- Reviewing pull requests
-- Attack Surface Review
-
-##### Current
-- Ensuring functionality of app
-
-##### Next
-- Security enhancements
-
-#### [Craig Opie](https://craigopie.github.io/)
-***
-
-##### New Completions
-
-##### Current
-
-##### Next
-
-#### [Joseph Paragas](https://joeparagas.github.io/)
-***
-
-##### New Completions
-- UI for Create Profile page
-
-##### Current
-- Directing Create Profile page to Profile page
-- User Profile Page design/format
-- Edit Profile feature
-
-##### Next
-- UI for the Edit Page
