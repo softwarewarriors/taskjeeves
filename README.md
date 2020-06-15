@@ -257,35 +257,34 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 06/07/2020 - 06/14/2020
 
-Progress:
-New UI for landing page
-New UI for sign in page
-New UI for sign up page
-New page to redirect sign in and sign up page to profile page
-New UI for list tasks page
-New UI for add tasks page
-New UI for edit tasks page
-Reviewing pull requests
-Attack surface review
+### Progress
+- New UI for landing page
+- New UI for sign in page
+- New UI for sign up page
+- New page to redirect sign in and sign up page to profile page
+- New UI for list tasks page
+- New UI for add tasks page
+- New UI for edit tasks page
+- Reviewing pull requests
+- Attack surface review
 
-Link: 
+### Link
 
 https://github.com/softwarewarriors/taskjeeves
 
-Pending: 
+### Pending 
+- Add about information to landing page
+- Update terms, security and privacy pages to fix spacing
+- Change font in navbar
+- Fix spacing in Task List (between two tasks)
+- Replace user email in navbar with user name
 
-Add about information to landing page
-Update terms, security and privacy pages to fix spacing
-Change font in navbar
-Fix spacing in Task List (between two tasks)
-Replace user email in navbar with user name
+### Roles and responsibilities: 
 
-Roles and responsibilities: 
-
-### [Darlene Agbayani](https://darleneagbayani.github.io/)
+#### [Darlene Agbayani](https://darleneagbayani.github.io/)
 ***
 
-New Completions
+##### New Completions
 - New UI for landing page
 - New UI for sign in page
 - New UI for sign up page
@@ -293,42 +292,42 @@ New Completions
 - New UI for add tasks page
 - New UI for edit tasks page
 
-Current
+##### Current
 - Add about information to landing page
 
-Next
+##### Next
 - Update terms, security and privacy pages to fix spacing
 - Change font in navbar
 - Fix spacing in Task List (between two tasks)
 
-### [Julian Kim](https://julianki-cs.github.io/)
+#### [Julian Kim](https://julianki-cs.github.io/)
 ***
 
-New Completions
+##### New Completions
 - Signout page redirect
 - Reviewing pull requests
 - Attack Surface Review
 
-Current
+##### Current
 - Ensuring functionality of app
 
-Next
+##### Next
 - Security enhancements
 
-### [Craig Opie](https://craigopie.github.io/)
+#### [Craig Opie](https://craigopie.github.io/)
 ***
 
-New Completions
+##### New Completions
 
-Current
+##### Current
 
-Next
+##### Next
 
-### [Joseph Paragas](https://joeparagas.github.io/)
+#### [Joseph Paragas](https://joeparagas.github.io/)
 ***
 
-New Completions
+##### New Completions
 
-Current
+##### Current
 
-Next
+##### Next
