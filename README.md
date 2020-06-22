@@ -192,6 +192,56 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Implement a way for the user to edit their profile
             - Implement a way for the user to change their password
 
+### Update 6/15/2020 - 6/21/2020
+- Progress:
+    - Fixed errors defined by the Static Analysis tool (ESLint)
+
+- Pending:
+    - Add regular expressions to all user input to prevent malicious entries
+    - Remove depreciated pages and references from the site
+    - Modify UI in navbar to remove email and replace with user's first name
+    - Add information about the app to the landing page
+    - Update formatting on the terms, security, and privacy pages
+    - Have user agree to terms when creating account
+    - Address security concerns identified in our Arachni evaluation
+    - Implement a way for the user to edit their profile
+    - Implement a way for the user to change their password
+- Roles and Responsibilities:
+    - [Darlene Agbayani](https://darleneagbayani.github.io/)
+        - New Completions:
+            - fill
+        - Current:
+            - fill
+        - Next:
+            - fill        
+    - [Julian Kim](https://julianki-cs.github.io/)
+        - New Completions:
+            - Fixed ESLint errors 
+            - Fuzz testing on AddTask
+            - Wrote updated report on Static Analysis of code
+            - Organized Google Drive folders and report
+            - Other miscellaneous administrative tasks
+        - Current:
+            - Further testing to ensure that users cannot input malicious JavaScript into application 
+            - UI and QOL improvements for application
+        - Next:
+            - Further security testing 
+            - Review Attack surface of application
+    - [Craig Opie](https://craigopie.github.io/)
+        - New Completions:
+            - fill
+        - Current:
+            - fill
+        - Next:
+            - fill
+    - [Joseph Paragas](https://joeparagas.github.io/)
+        - New Completions:
+            - fill
+        - Current:
+            - fill
+        - Next:
+            - fill
+
 
 ## INSTALLATION
 
