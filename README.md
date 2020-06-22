@@ -241,11 +241,14 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Have user agree to terms when creating account
     - [Joseph Paragas](https://joeparagas.github.io/)
         - New Completions:
-            - fill
+            - Fuzz Testing Attempt #2
+            - Profile page
+            - Reviewed and approved pull requests 
         - Current:
-            - fill
+            - Finishing up static pages 
         - Next:
-            - fill
+            - Security testing 
+            - Review security/privacy requirements of our app and see if our app has fulfilled them
 
 
 ## INSTALLATION
