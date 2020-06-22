@@ -217,7 +217,7 @@ The goal of this application is to demonstrate a Meteor development providing a 
     - [Julian Kim](https://julianki-cs.github.io/)
         - New Completions:
             - Fixed ESLint errors 
-            - Fuzz testing on AddTask
+            - Fuzz testing on AddTask to test for Buffer Overflow, Injection, and Cross-Site scripting vulnerabilities
             - Wrote updated report on Static Analysis of code
             - Organized Google Drive folders and report
             - Other miscellaneous administrative tasks
