@@ -199,9 +199,7 @@ The goal of this application is to demonstrate a Meteor development providing a 
 - Pending:
     - Add regular expressions to all user input to prevent malicious entries
     - Remove depreciated pages and references from the site
-    - Modify UI in navbar to remove email and replace with user's first name
-    - Add information about the app to the landing page
-    - Update formatting on the terms, security, and privacy pages
+
     - Have user agree to terms when creating account
     - Address security concerns identified in our Arachni evaluation
     - Implement a way for the user to edit their profile
@@ -209,11 +207,12 @@ The goal of this application is to demonstrate a Meteor development providing a 
 - Roles and Responsibilities:
     - [Darlene Agbayani](https://darleneagbayani.github.io/)
         - New Completions:
-            - fill
+            - Update formatting on the terms, security, and privacy pages
+            - Add information about the app to the landing page
         - Current:
-            - fill
+            - Modify UI in navbar to remove email and replace with user's first name
         - Next:
-            - fill        
+            - Change color of links in navbar to white        
     - [Julian Kim](https://julianki-cs.github.io/)
         - New Completions:
             - Fixed ESLint errors 
