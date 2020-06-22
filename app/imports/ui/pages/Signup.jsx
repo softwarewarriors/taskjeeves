@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Message } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -36,11 +36,11 @@ class Signup extends React.Component {
     this.setState({ error: '' });
 
     /** password validation */
-    let hasUpper = /[A-Z]/.test(this.state.password);
-    let hasLower = /[a-z]/.test(this.state.password);
-    let hasNumber = /\d/.test(this.state.password);
-    let hasNonAlpha = /[!@#$&*_-]/.test(this.state.password);
-    let validCheck = hasUpper + hasLower + hasNumber + hasNonAlpha;
+    const hasUpper = /[A-Z]/.test(this.state.password);
+    const hasLower = /[a-z]/.test(this.state.password);
+    const hasNumber = /\d/.test(this.state.password);
+    const hasNonAlpha = /[!@#$&*_-]/.test(this.state.password);
+    const validCheck = hasUpper + hasLower + hasNumber + hasNonAlpha;
     if ((this.state.password.length < 8) || (validCheck < 3) || (!/[a-zA-Z\d!@#$&*_-]/.test(this.state.password)) ||
         (/[%^()+={}|.,`~]/.test(this.state.password))) {
       this.setState({ errorPassword: true });
@@ -85,9 +85,9 @@ class Signup extends React.Component {
     }
     return (
         <Container height="100vh" style={{ margin: '0px', width: '100%', height: '110vh', backgroundColor: 'white',
-          backgroundSize: 'cover', backgroundImage: `url(${"/images/signup-background.jpg"})` }}>
+          backgroundSize: 'cover', backgroundImage: `url(${'/images/signup-background.jpg'})` }}>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-            <Grid.Column style={{ paddingTop: '30vh'}}>
+            <Grid.Column style={{ paddingTop: '30vh' }}>
               <Message
                   attached header='Welcome to our site!'
                   content='Fill out the form below to sign-up for a new account'
@@ -125,7 +125,9 @@ class Signup extends React.Component {
                 />
                 <Grid>
                   <Grid.Column textAlign="center">
-                    <Form.Button style={{borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff'}} content="Submit"/>
+                    <Form.Button style=
+                                     {{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
+                                 content="Submit"/>
                   </Grid.Column>
                 </Grid>
               </Form>
