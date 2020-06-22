@@ -235,6 +235,7 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Performed and wrote Dynamic Analysis Review
             - Corrected security for HTTP ‘TRACE’ method to prevent XSS exploits
             - Added ‘X-Frame-Options’ header to prevent clickjacking exploits
+            - Reviewed and approved pull requests
         - Current:
             - Remove depreciated pages and references from our web application 
         - Next:
