@@ -17,13 +17,15 @@ class ListTaskers extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container style={{height:'110vh'}}>
-          <Card.Group centered style={{paddingTop:'20vh'}}>
+        <Container style={{ height: '110vh' }}>
+          <Card.Group centered style={{ paddingTop: '20vh' }}>
             <Card fluid>
               <Card.Content>
                 <Card.Header className="tasksHeader">My Tasks</Card.Header>
               </Card.Content>
-    		<Card.Content><Card.Description>You are currently viewing your tasks. Choose to edit or mark your tasks as completed.</Card.Description></Card.Content>
+              <Card.Content><Card.Description>
+          You are currently viewing your tasks. Choose to edit or mark your tasks as completed.
+              </Card.Description></Card.Content>
               <Card.Content extra>
                 <Segment.Group>
                   {this.props.tasks
