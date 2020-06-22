@@ -229,11 +229,16 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Review Attack surface of application
     - [Craig Opie](https://craigopie.github.io/)
         - New Completions:
-            - fill
+            - Wrote python script to brute force password check the admin and default user passwords
+            - Changed default passwords to something that is not included in the RockYou password list
+            - Performed and wrote Fuzz testing attempt 3
+            - Performed and wrote Dynamic Analysis Review
+            - Corrected security for HTTP ‘TRACE’ method to prevent XSS exploits
+            - Added ‘X-Frame-Options’ header to prevent clickjacking exploits
         - Current:
-            - fill
+            - Remove depreciated pages and references from our web application 
         - Next:
-            - fill
+            - Have user agree to terms when creating account
     - [Joseph Paragas](https://joeparagas.github.io/)
         - New Completions:
             - fill
