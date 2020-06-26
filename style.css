@@ -9,6 +9,9 @@
 .ui.fluid.card, .header.tasksHeader, .ui.right.floated.header, .ui.attached.fluid.segment.form, .ui.attached.message {
   font-family: 'Questrial', sans-serif !important;
 }
+.landing-column {
+	padding-bottom: 10vh;
+}
 .text {
   padding: 6px !important;
   font-weight: 700;
@@ -16,9 +19,12 @@
 .ui.segments{
 	padding-bottom: 20px;
 }
+.ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover {
+  color: #fff !important;
+}
 .item, .item:active, .item:hover, .item:visited {
   padding-right: 2vw;
-  color: #000 !important;
+  color: #fff !important;
   text-decoration: underline;
 }
 .landing-body {
@@ -67,6 +73,7 @@
   overflow-y: visible;
   margin-bottom: 100px;
   font-family: 'Questrial', sans-serif;
+	color: #000 !important;
 }
 .policy-header2 {
   font-family: 'Questrial', sans-serif;
@@ -78,6 +85,7 @@
   line-height: 15pt;
   font-size: 10pt;
   margin: 10pt;
+  color: #000 !important;
 }
 .terms-text, .terms-text:active, .terms-text:hover, .terms-text:visited {
   color: #000000;
@@ -92,8 +100,8 @@
   color: #000000;
   font-weight: normal;
 }
-.privacy-text, .privacy-text:active, .privacy-text:hover, .privacy-text:visited {
-  color: #000000;
+.privacy-text, .privacy-text:active, .privacy-text:hover, .privacy-text:visited, .p {
+  color: #000 !important;
   font-weight: 700;
 }
 footer {
@@ -139,6 +147,10 @@ footer {
   font-weight: 700;
 }
 .item, .item:active, .item:hover, .item:visited {
+  padding-right: 2vw;
+  color: #000 !important;
+}
+.item-other, .item-other:active, .item-other:hover, .item-other:visited {
   padding-right: 2vw;
   color: #000 !important;
   text-decoration: underline;
