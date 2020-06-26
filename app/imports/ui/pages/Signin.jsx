@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Message } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -38,15 +38,15 @@ export default class Signin extends React.Component {
     const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
-      return
-    <Redirect to={from}/>
-;
+      return <Redirect to={from}/>;
     }
     // Otherwise return the Login form.
     return (
-<Container height="100vh" style={{ margin: '0px', width: '100%', height: '110vh', backgroundColor: 'white', backgroundSize: 'cover', backgroundImage: `url(${"/images/signin-background.jpg"})` }}>
+<Container height="100vh" style=
+    {{ margin: '0px', width: '100%', height: '110vh', backgroundColor: 'white',
+      backgroundSize: 'cover', backgroundImage: `url(${'/images/signin-background.jpg'})` }}>
   <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-    <Grid.Column style={{ paddingTop: '30vh'}}>
+    <Grid.Column style={{ paddingTop: '30vh' }}>
       <Message
       attached
       header='Welcome back!'
@@ -73,11 +73,11 @@ export default class Signin extends React.Component {
                 />
         <Grid>
           <Grid.Column textAlign="center">
-            <Form.Button style={{borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff'}} content="Submit"/>
+            <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }} content="Submit"/>
           </Grid.Column>
         </Grid>
       </Form>
-      <Message attached='bottom' info> Don't have an account yet? Click&nbsp;
+      <Message attached='bottom' info> Don&apos;t have an account yet? Click&nbsp;
         <Link to="/signup">
         here
         </Link>
@@ -100,4 +100,4 @@ export default class Signin extends React.Component {
 /** Ensure that the React Router location object is available in case we need to redirect. */
 Signin.propTypes = {
   location: PropTypes.object,
-}; 
+};

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Header, Icon, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
+
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class TaskItem extends React.Component {
@@ -23,7 +23,8 @@ class TaskItem extends React.Component {
             <Icon name='edit outline'/>
           </Button>
           <Header as={'h4'} floated='right'>
-            Due: {moment(this.props.task.due).format("MMM Do YYYY")}
+            {/* eslint-disable-next-line no-undef */}
+            Due: {moment(this.props.task.due).format('MMM Do YYYY')}
           </Header>
           <Header.Subheader>
             {this.props.task.description}

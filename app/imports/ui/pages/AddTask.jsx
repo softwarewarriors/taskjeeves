@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Segment, Header } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, NumField, SelectField, SubmitField, TextField } from 'uniforms-semantic';
+import { Grid, Segment, Form, Message } from 'semantic-ui-react';
+import { AutoForm, ErrorsField, TextField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
@@ -38,15 +38,26 @@ class AddTask extends React.Component {
   render() {
     let fRef = null;
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Add Task</Header>
-            <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+        <Grid container centered style={{ height: '110vh' }}>
+          <Grid.Column style={{ paddingTop: '20vh' }}>
+      <Message
+      attached
+      header='Add Task'
+      content=
+          'Input information for subject, description and date for your new task.'
+    style={{ fontFamily: 'Questrial' }}/>
+    <AutoForm className='attached fluid segment' ref={ref => { fRef = ref; }}
+                  schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
                 <TextField name='subject'/>
                 <TextField name='description'/>
-                <TextField name='due'/>
-                <SubmitField value='Submit'/>
+                <TextField name='due' type='date'/>
+        <Grid>
+          <Grid.Column textAlign="center">
+            <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
+                         value="Submit" content="Submit"/>
+          </Grid.Column>
+        </Grid>
                 <ErrorsField/>
               </Segment>
             </AutoForm>

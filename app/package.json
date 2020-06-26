@@ -5,6 +5,7 @@
     "@babel/runtime": "^7.10.2",
     "bcrypt": "^4.0.1",
     "classnames": "^2.2.6",
+    "connect": "^3.7.0",
     "core-js": "^3.6.4",
     "graphql": "^14.5.8",
     "meteor-node-stubs": "^0.4.1",
@@ -21,7 +22,8 @@
     "sweetalert": "^2.1.2",
     "uniforms": "^2.6.5",
     "uniforms-bridge-simple-schema-2": "^2.6.5",
-    "uniforms-semantic": "^2.6.5"
+    "uniforms-semantic": "^2.6.5",
+    "webapp": "0.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
