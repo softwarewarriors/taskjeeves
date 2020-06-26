@@ -250,6 +250,53 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Security testing 
             - Review security/privacy requirements of our app and see if our app has fulfilled them
 
+### Update 6/22/2020 - 6/28/2020
+- Progress:
+    - Fixed errors defined by the Static Analysis tool (ESLint)
+
+- Pending:
+    - Add regular expressions to all user input to prevent malicious entries
+    - Remove depreciated pages and references from the site
+    - Have user agree to terms when creating account
+    - Address security concerns identified in our Arachni evaluation
+    - Implement a way for the user to edit their profile
+    - Implement a way for the user to change their password
+    
+- Roles and Responsibilities:
+    - [Darlene Agbayani](https://darleneagbayani.github.io/)
+        - New Completions:
+            - Create Wiki page for Task Jeeves   
+    - [Julian Kim](https://julianki-cs.github.io/)
+        - New Completions:
+            - 
+            -
+            -
+        - Current:
+            - 
+            -
+        - Next:
+            - 
+    - [Craig Opie](https://craigopie.github.io/)
+        - New Completions:
+            - 
+            -
+            -
+        - Current:
+            - 
+            -
+        - Next:
+            - 
+    - [Joseph Paragas](https://joeparagas.github.io/)
+        - New Completions:
+            - 
+            -
+            -
+        - Current:
+            - 
+            -
+        - Next:
+            - 
+
 
 ## INSTALLATION
 
