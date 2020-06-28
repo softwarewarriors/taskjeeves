@@ -16,15 +16,15 @@ class EditTask extends React.Component {
     const { subject, description, due, _id } = data;
 
     /** verify valid entries */
-    if (/^[<>]$/.test(subject)) {
+    if (/<|>/.test(subject)) {
       swal('Error', 'Subject contains invalid character "<" or ">".', 'error');
       return;
     }
-    if (/^[<>]$/.test(description)) {
+    if (/<|>/.test(description)) {
       swal('Error', 'Description contains invalid character "<" or ">".', 'error');
       return;
     }
-    if (/^[<>]$/.test(due)) {
+    if (/<|>/.test(due)) {
       swal('Error', 'Due contains invalid character "<" or ">".', 'error');
       return;
     }
