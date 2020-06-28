@@ -14,6 +14,22 @@ class EditTask extends React.Component {
   /** On successful submit, insert the data. */
   submit(data) {
     const { subject, description, due, _id } = data;
+
+    /** verify valid entries */
+    if (/^[<>]$/.test(subject)) {
+      swal('Error', 'Subject contains invalid character "<" or ">".', 'error');
+      return;
+    }
+    if (/^[<>]$/.test(description)) {
+      swal('Error', 'Description contains invalid character "<" or ">".', 'error');
+      return;
+    }
+    if (/^[<>]$/.test(due)) {
+      swal('Error', 'Due contains invalid character "<" or ">".', 'error');
+      return;
+    }
+
+    /** All valid characters, make entry */
     Task.update(_id, { $set: { subject, description, due } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
