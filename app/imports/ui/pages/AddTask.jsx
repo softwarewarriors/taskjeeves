@@ -23,6 +23,22 @@ class AddTask extends React.Component {
     const owner = Meteor.user().username;
     const created = new Date();
     const completed = false;
+
+    /** verify valid entries */
+    if (/<|>/.test(subject)) {
+      swal('Error', 'Subject contains invalid character "<" or ">".', 'error');
+      return;
+    }
+    if (/<|>/.test(description)) {
+      swal('Error', 'Description contains invalid character "<" or ">".', 'error');
+      return;
+    }
+    if (/<|>/.test(due)) {
+      swal('Error', 'Due contains invalid character "<" or ">".', 'error');
+      return;
+    }
+
+    /** All valid characters, make entry */
     Task.insert({ subject, description, owner, created, due, completed },
       (error) => {
         if (error) {
@@ -38,31 +54,28 @@ class AddTask extends React.Component {
   render() {
     let fRef = null;
     return (
-        <Grid container centered style={{ height: '110vh' }}>
-          <Grid.Column style={{ paddingTop: '20vh' }}>
-      <Message
-      attached
-      header='Add Task'
-      content=
-          'Input information for subject, description and date for your new task.'
-    style={{ fontFamily: 'Questrial' }}/>
-    <AutoForm className='attached fluid segment' ref={ref => { fRef = ref; }}
-                  schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
-              <Segment>
-                <TextField name='subject'/>
-                <TextField name='description'/>
-                <TextField name='due' type='date'/>
-        <Grid>
-          <Grid.Column textAlign="center">
-            <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
-                         value="Submit" content="Submit"/>
-          </Grid.Column>
-        </Grid>
-                <ErrorsField/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+      <Grid container centered style={{ height: '110vh' }}>
+        <Grid.Column style={{ paddingTop: '20vh' }}>
+          <Message attached header='Add Task'
+                   content='Input information for subject, description and date for your new task.'
+                   style={{ fontFamily: 'Questrial' }}/>
+          <AutoForm className='attached fluid segment' ref={ref => { fRef = ref; }} schema={formSchema}
+                    onSubmit={data => this.submit(data, fRef)} >
+            <Segment>
+              <TextField name='subject'/>
+              <TextField name='description'/>
+              <TextField name='due' type='date'/>
+                <Grid>
+                  <Grid.Column textAlign="center">
+                    <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
+                                 value="Submit" content="Submit"/>
+                  </Grid.Column>
+                </Grid>
+              <ErrorsField/>
+            </Segment>
+          </AutoForm>
+        </Grid.Column>
+      </Grid>
     );
   }
 }
