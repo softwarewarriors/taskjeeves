@@ -29,7 +29,7 @@ class Signup extends React.Component {
     /** email validation */
     if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$/.test(email)) {
       this.setState({ errorEmail: true });
-      this.setState({ error: 'You must use an @hawaii.edu address.' });
+      this.setState({ error: 'Please enter a valid email address.' });
       return;
     }
     this.setState({ errorEmail: false });

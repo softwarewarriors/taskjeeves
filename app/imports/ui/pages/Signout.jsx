@@ -13,7 +13,7 @@ export default class Signout extends React.Component {
   };
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 3000);
+    this.id = setTimeout(() => this.setState({ redirect: true }), 2000);
   }
 
   componentWillUnmount() {
