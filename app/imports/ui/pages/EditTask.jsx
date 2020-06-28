@@ -45,35 +45,36 @@ class EditTask extends React.Component {
     return (
         <Grid container centered style={{ height: '110vh' }}>
           <Grid.Column style={{ paddingTop: '20vh' }}>
-            <Message
-      attached
-      header='Edit Task'
-      content=
-          'You are currently editing a task. Make changes to subject, description and due dates for your task below.'
-    />
-    <AutoForm className='attached fluid segment' schema={TaskSchema}
-                  onSubmit={data => this.submit(data)} model={this.props.doc}>
-              <Segment>
-                <TextField name='subject'/>
-                <TextField name='description'/>
-                <TextField name='due' type='date'/>
-        <Grid>
-          <Grid.Column textAlign="center">
-            <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
-                         value="Submit" content="Submit"/>
-          </Grid.Column>
-        </Grid>
-                <ErrorsField/>
-                <HiddenField name='owner' />
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+            <Message attached
+                     header='Edit Task'
+                     content='You are currently editing a task. Make changes to subject, description and due dates for
+                     your task below.'/>
+            <AutoForm className='attached fluid segment'
+                      schema={TaskSchema}
+                      onSubmit={data => this.submit(data)}
+                      model={this.props.doc}>
+            <Segment>
+              <TextField name='subject'/>
+              <TextField name='description'/>
+              <TextField name='due' type='date'/>
+              <Grid>
+                <Grid.Column textAlign="center">
+                  <Form.Button style={{ borderRadius: '10px', backgroundColor: '#8fd7ce', color: '#fff' }}
+                               value="Submit"
+                               content="Submit"/>
+                </Grid.Column>
+              </Grid>
+              <ErrorsField/>
+              <HiddenField name='owner' />
+            </Segment>
+          </AutoForm>
+        </Grid.Column>
+      </Grid>
     );
   }
 }
 
-/** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
+/** Require the presence of a Task document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditTask.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
@@ -84,7 +85,7 @@ EditTask.propTypes = {
 export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
-  // Get access to Stuff documents.
+  // Get access to Tasks documents.
   const subscription = Meteor.subscribe('Tasks');
   return {
     doc: Task.findOne(documentId),

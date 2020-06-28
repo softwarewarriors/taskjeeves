@@ -10,10 +10,7 @@ import Landing from '../pages/Landing';
 import Terms from '../pages/Terms';
 import Privacy from '../pages/Privacy';
 import Security from '../pages/Security';
-import ListStuff from '../pages/ListStuff';
 import ListTaskers from '../pages/ListTaskers';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
-import AddStuff from '../pages/AddStuff';
 import AddTask from '../pages/AddTask';
 import EditTask from '../pages/EditTask';
 import NotFound from '../pages/NotFound';
@@ -35,12 +32,9 @@ class App extends React.Component {
               <Route path="/terms" component={Terms}/>
               <Route path="/privacy" component={Privacy}/>
               <Route path="/security" component={Security}/>
-              <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/tasks" component={ListTaskers}/>
-              <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/addtask" component={AddTask}/>
               <ProtectedRoute path="/edit/:_id" component={EditTask}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>

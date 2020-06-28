@@ -264,9 +264,9 @@ const Terms = () => (
           </b><br/><br/>
           <p>Based on the laws of some countries, you may have the right to request access to the personal information
             we collect from you, change that information, or delete it in some circumstances. To request to review,
-            update, or delete your personal information, please visit: __________. We will respond to your request
-            within 30 days.<br/></p>
-          <br/>
+            update, or delete your personal information, please contact opieca@hawaii.edu. We will respond to your
+            request within 30 days.<br/>
+          </p><br/>
         </div>
       </div>
     </div>
