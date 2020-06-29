@@ -346,14 +346,17 @@ The first time you run the app, it will create some default users and data. Here
 ```
 => Started proxy.
 => Started MongoDB.
-I20180227-13:33:02.716(-10)? Creating the default user(s)
-I20180227-13:33:02.742(-10)?   Creating user admin@foo.com.
-I20180227-13:33:02.743(-10)?   Creating user john@foo.com.
-I20180227-13:33:02.743(-10)? Creating default data.
-I20180227-13:33:02.743(-10)?   Adding: Basket (john@foo.com)
-I20180227-13:33:02.743(-10)?   Adding: Bicycle (john@foo.com)
-I20180227-13:33:02.743(-10)?   Adding: Banana (admin@foo.com)
-I20180227-13:33:02.744(-10)?   Adding: Boogie Board (admin@foo.com)
+I20200628-12:12:54.595(-10)? Creating the default user(s)
+I20200628-12:12:54.626(-10)?   Creating user admin@foo.com.
+I20200628-12:12:54.683(-10)?   Creating user john@foo.com.
+I20200628-12:12:54.756(-10)? Creating default tasks.
+I20200628-12:12:54.757(-10)?   Adding: First Task (john@foo.com)
+I20200628-12:12:54.792(-10)?   Adding: Second Task (john@foo.com)
+I20200628-12:12:54.794(-10)?   Adding: Third Task (admin@foo.com)
+I20200628-12:12:54.795(-10)?   Adding: Fourth Task (admin@foo.com)
+I20200628-12:12:54.797(-10)? Creating default data.
+I20200628-12:12:54.797(-10)?   Adding: admin@foo.com
+I20200628-12:12:54.831(-10)?   Adding: john@foo.com
 => Started your app.
 
 => App running at: http://localhost:3000/
@@ -389,26 +392,31 @@ The app/ directory has this structure:
 
 ```
 client/
-  main.html      # The boilerplate HTML with a "root" div to be manipulated by React.
-  main.js        # import startup files.
+    main.html       # The boilerplate HTML with a "root" div to be manipulated by React.
+    main.js         # Import startup files.
+    style.css       # The boilerplate CSS.
 
 imports/
-  api/           # Define collections
-    stuff/       # The Stuff collection definition
-  startup/       # Define code to run when system starts up (client-only, server-only, both)
-    client/
-    server/
-  ui/
-    layouts/     # Contains top-level layout (<App> component).
-    pages/       # Contains components for each page.
-    components/  # Contains page elements, some of which could appear on multiple pages.
+    api/            # Define collections
+        task/       # The Task collection definition
+        user/       # The User collection definition
+    startup/        # Define code to run when system starts up
+        client/     # Client-only
+        server/     # Server-only
+    ui/             # Define code that details the UI
+        components/ # Contains page elements, some of which could appear on multiple pages.
+        layouts/    # Contains top-level layout (<App> component).
+        pages/      # Contains components for each page.
 
-node_modules/    # managed by npm
+node_modules/       # managed by npm
 
-public/          # static assets (like images) can go here.
+public/             # static assets go here.
+    images/         # Contains images available to the public.
+    themes/         # Contains themes available.
 
-server/
-   main.js       # import the server-side js files.
+server/             # Server specific files go here.
+    main.js         # Import the server-side js files.
+    policy.js       # Import the browser policy js files.
 ```
 
 ### Import conventions
