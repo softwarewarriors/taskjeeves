@@ -1,7 +1,6 @@
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Title.png)
 
 ## TABLE OF CONTENTS
-***
 * [OVERVIEW](#overview)
 * [THE TEAM](#the-team)
 * [DOCUMENTS](#documents)
@@ -11,7 +10,6 @@
 * [WALKTHROUGH](#walkthrough)
 
 ## OVERVIEW
-***
 ### Project: Secure Development Life Cycle
 This project is geared towards learning about improving the <b>secure development life cycle</b> with software quality assurance.  This team is a group of four ICS427 students dedicated to improving our team work and communication skills, security and privacy policies, understanding of quality and reliable code, penetration testing, and analyzing the impact and severity of bugs within software.
 
@@ -19,7 +17,6 @@ Assignments:
 - Task Jeeves
 
 ## THE TEAM
-***
 Four ICS students at the University of Hawaii at Manoa.  
 Check out our portfolios below! 
 
@@ -29,12 +26,10 @@ Check out our portfolios below!
 ### [Joseph Paragas](https://joeparagas.github.io/)
 
 ## DOCUMENTS
-***
 * [Our SDL](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/sdl.pdf)
 * [Assignment One](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/ass1.pdf)
 
 ## PROGRESS + DEVELOPMENT
-***
 * [Task Jeeves Deployment](https://taskjeeves.meteorapp.com/)
 
 Track the team's progress via Milestones:
@@ -333,7 +328,6 @@ The goal of this application is to demonstrate a Meteor development providing a 
 
 
 ## INSTALLATION
-
 First, [install Meteor](https://www.meteor.com/install).
 
 Second, go to [https://github.com/softwarewarriors/taskjeeves](https://github.com/softwarewarriors/taskjeeves), and click the "Clone or download" button to download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
@@ -345,7 +339,6 @@ $ meteor npm install
 ```
 
 ## RUNNING THE SYSTEM
-
 Once the libraries are installed, you can run the application by invoking the "start" script in the [package.json file](https://github.com/softwarewarriors/taskjeeves/tree/master/app/package.json):
 
 ```
@@ -372,11 +365,9 @@ I20180227-13:33:02.744(-10)?   Adding: Boogie Board (admin@foo.com)
 
 
 ### VIEWING THE RUNNING APP LOCALLY
-
 If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/softwarewarriors/taskjeeves/tree/master/config/settings.development.json), or else register a new account.
 
 ### ESLint
-
 You can verify that the code obeys our coding standards by running ESLint over the code in the imports/ directory with:
 
 ```
@@ -384,11 +375,9 @@ meteor npm run lint
 ```
 
 ## WALKTHROUGH
-
 The following sections describe the major features of this template.
 
 ### Directory structure
-
 The top-level directory structure is:
 
 ```
@@ -427,17 +416,14 @@ server/
 ```
 
 ### Import conventions
-
 This system adheres to the Meteor guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
 
 ### Application functionality
-
 The application implements a simple CRUD application for managing "Stuff", which is a Mongo Collection consisting of a name (String), a quantity (Number), and a condition (one of 'excellent', 'good', 'fair', or 'poor').
 
 By default, each user only sees the Stuff that they have created.  However, the settings file enables you to define default accounts.  If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.
 
 #### Landing page
-
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Landing.JPG)
@@ -445,26 +431,22 @@ When you retrieve the app at http://localhost:3000, this is what should be displ
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
 #### Login page
-
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/SignIn.JPG)
 
 #### Register page
-
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Register.JPG)
 
 
 #### Add Task page
-
 After logging in, here is the page that allows you to add new Tasks:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/AddStuff.JPG)
 
 #### List Tasks page
-
 After logging in, here is the page that allows you to list all the Tasks you have created:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Tasks.JPG)
@@ -472,7 +454,6 @@ After logging in, here is the page that allows you to list all the Tasks you hav
 You click the "Edit" link to go to the Edit Task page, shown next.
 
 #### Edit Task page
-
 After clicking on the "Edit" link associated with a task, this page displays that allows you to change and save it:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
