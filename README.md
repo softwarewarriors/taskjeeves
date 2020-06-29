@@ -24,64 +24,9 @@ Four ICS students at the University of Hawaii at Manoa.
 Check out our portfolios below! 
 
 ### [Darlene Agbayani](https://darleneagbayani.github.io/)
-***
-
-- Assignment 1
-    - Requirements
-        - Security
-        - Privacy
-- Application Logo
-
-- Assignment 2
-    - Footer UI
-    - End User License Agreement
-    - Privacy Policy
-    - Security Policy
- 
- 
 ### [Julian Kim](https://julianki-cs.github.io/)
-***
-
-- Assignment 1
-- Threat Modeling 
-
-- Assignment 2
-    - Implementation 
-    - Approved Tools
-        - Static Analysis Tools
-    - SignOut Page 
-  
-  
 ### [Craig Opie](https://craigopie.github.io/)
-***
-
-- Assignment 1
-    - Document formatting
-    - Our Team version of the SDL
-    - Sceduled meetings / setup communication channels
-    - Quality Gates
-    - Risk Assessment
-    - Definitions
-
-- Assignment 2
-    - Setup GitHub for the Team
-    - Created issues for the team
-    - Created the two projects in GitHub (M1 and Security)
-    - Created the working backbone meteor app
-    - Created the GitHub Page
-    - Sceduled meetings / setup communication channels
- 
- 
 ### [Joseph Paragas](https://joeparagas.github.io/)
-***
-
-- Assignment 1
-    - Design Requirements
-    - Attack Surface Analysis and Reduction
-    - Application Title
- 
-- Assignment 2
-    - Landing Page UI 
 
 ## DOCUMENTS
 ***
@@ -106,6 +51,95 @@ Task Jeeves is a Meteor application that illustrates:
   * Allows marking tasks as complete.
 
 The goal of this application is to demonstrate a Meteor development providing a secure directory structure for development and deployment, a set of common extensions to the core framework, and a basic application to implement basic page display, navigation, forms, roles, and collection manipulation.
+
+### Update 05/31/2020 - 06/07/2020
+- Progress: 
+    - Setup GitHub for the Team
+    - Created issues for the team
+    - Created the two projects in GitHub (M1 and Security)
+    - Created the working backbone meteor app
+    - Created the GitHub Page
+    - Landing Page UI
+    - Footer UI
+    - End User License Agreement
+    - Privacy Policy
+    - Security Policy
+    - Implementation 
+    - Approved Tools
+        - Static Analysis Tools
+        - Dynamic Analysis Tools
+    - SignOut Page
+        
+- Pending:
+    - Protect user passwords using hash and salting algorithm 
+    - Implement a new user table to store personal information and to ensure the password is not passed when the user wants to update profile information
+    - Filter user input using regular expressions to check if the information is valid and not using select characters that may introduce a vulnerability
+    - Deploy our web application for use at https://taskjeeves.meteorapp.com/
+    - Deploy Arachni on our site to evaluate vulnerabilities
+    - Update content in the terms of service, security, and privacy policies
+    - Improve the UI of our site and create a new logo
+    
+- Roles and Responsibilities:
+    - [Darlene Agbayani](https://darleneagbayani.github.io/)
+        - New Completions:
+            - Footer UI
+            - End User License Agreement
+            - Privacy Policy
+            - Security Policy
+        - Current:
+            - Updating the security and privacy policies
+            - Improve UI of web pages
+            - Application logo
+        - Next:
+            - Design the color scheme/layout of the site
+            - Implement UI changes to multiple pages
+            - Implement new terms of use, security, and privacy policies
+            - Update the footer to include new policies
+    - [Julian Kim](https://julianki-cs.github.io/)
+        - New Completions:
+            - Implementation 
+            - Approved Tools
+                - Static Analysis Tools
+                - Dynamic Analysis Tools
+            - SignOut Page
+        - Current:
+            - Update the UI for the sign out page
+            - Verifying functionality of the web application
+        - Next:
+            - Complete redirect during sign out
+            - Implement UI changes to sign out page
+            - Review and approved pull requests
+            - Attack Surface Review
+    - [Craig Opie](https://craigopie.github.io/)
+        - New Completions:
+            - Setup GitHub for the Team
+            - Created issues for the team
+            - Created the two projects in GitHub (M1 and Security)
+            - Created the working backbone meteor app
+            - Created the GitHub Page
+            - Sceduled meetings / setup communication channels
+        - Current:
+            - Scedule meetings / maintain communication channels
+            - Evaluating security concerns in accordance with the NVD and using the CVSS v3.1 calculation evaluation
+        - Next:
+            - Make adjustments to the user session to terminate when closing the browser or tab
+            - Implement a new table to store the user information without having to go the same table where the user's password is stored
+            - Implement bcrypt to hash and salt the passwords to prevent being stored in plain text
+            - Implement regular expressions to check for invalid characters during using input
+            - Deploy our web application to https://taskjeeves.meteorapp.com/
+    - [Joseph Paragas](https://joeparagas.github.io/)
+        - New Completions:
+            - Design Requirements
+                - Attack Surface Analysis and Reduction
+                - Application Title
+            - Landing Page UI 
+        - Current:
+            - Designing the user profile page
+            - Creating components to access user table
+            - Designing the user's edit profile feature
+        - Next:
+            - Implement a way for the user to edit their profile
+            - Implement a way for the user to change their password
 
 ### Update 06/07/2020 - 06/14/2020
 - Progress: 
