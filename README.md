@@ -16,11 +16,10 @@ This project is geared towards learning about improving the <b>secure developmen
 ## THE TEAM
 Four ICS students at the University of Hawaii at Manoa.  
 Check out our portfolios below! 
-
-### [Darlene Agbayani](https://darleneagbayani.github.io/)
-### [Julian Kim](https://julianki-cs.github.io/)
-### [Craig Opie](https://craigopie.github.io/)
-### [Joseph Paragas](https://joeparagas.github.io/)
+* [Darlene Agbayani](https://darleneagbayani.github.io/)
+* [Julian Kim](https://julianki-cs.github.io/)
+* [Craig Opie](https://craigopie.github.io/)
+* [Joseph Paragas](https://joeparagas.github.io/)
 
 ## DOCUMENTS
 * [Our SDL](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/sdl.pdf)
