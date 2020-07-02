@@ -321,6 +321,34 @@ The goal of this application is to demonstrate a Meteor development providing a 
             -
         - Next:
             - 
+## Update 6/22/20 - 7/3/20 RELEASE
+- Responsibilities
+    - Julian Kim
+        - Incidence Response Plan
+        - Managing Final Report Document
+        - Supervising the team   
+    - Craig Opie
+    
+    - Darlene Agbayani
+    
+    - Joseph Paragas
+
+- Technical notes
+    - See INSTALLATION section below
+    
+- Closing thoughts 
+
+- Link to Github repository 
+    - https://github.com/softwarewarriors/taskjeeves
+    
+- Link to Final Project Documentation 
+    - link
+    
+- Link to Release 
+    - link
+    
+- Wiki
+    - link
 
 
 ## INSTALLATION
