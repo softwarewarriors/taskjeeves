@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { Grid, Loader, Segment, Form, Message } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, HiddenField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -36,8 +36,7 @@ class EditProfile extends React.Component {
     /** All valid characters, make entry */
     User.update(_id, { $set: { email, firstName, lastName, address } }, (error) => (error ?
       swal('Error', error.message, 'error') :
-      swal('Success', 'Profile updated successfully', 'success').then(() => <Redirect to="/profile"/>))
-    );
+      swal('Success', 'Profile updated successfully', 'success').then(() => <Redirect to="/profile"/>)));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */

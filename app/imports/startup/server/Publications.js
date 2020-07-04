@@ -1,5 +1,4 @@
 import { Meteor } from 'meteor/meteor';
-import { Roles } from 'meteor/alanning:roles';
 import { Task } from '../../api/task/Task';
 import { User } from '../../api/user/User';
 
