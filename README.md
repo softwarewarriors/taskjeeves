@@ -307,7 +307,7 @@ First, [install Meteor](https://www.meteor.com/install).
 
 Second, go to [https://github.com/softwarewarriors/taskjeeves](https://github.com/softwarewarriors/taskjeeves), and click the "Clone or download" button to download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
 
-Fourth, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
+Third, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
 
 ```
 $ meteor npm install
@@ -443,6 +443,6 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 
 ## CLOSING THOUGHTS 
-Developer notes looking back at all your work: the challenges, surprises, important achievements you are proud of(if there are any you want to highlight), disappointments(if any),  disclaimers/caveats etc
+You definitely need to put in the same, or maybe even more, amount of focus on the security aspects of your application as you would with the functionality of the pages and the overall aesthetics.  Throughout the creation of this project our team has been tried, tested, and found that we need to make improvements.  However, one surprise and somewhat disappointment that we discovered is that our team was not aware of all the built in features already protecting against the more common vulnerabilities of web applications.  However, this forced us to do additional research outside of the provided classroom assignments and discover modern ways to protect our web application.  
 
 [Back to table of contents](#table-of-contents)
