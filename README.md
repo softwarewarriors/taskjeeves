@@ -8,6 +8,7 @@
 * [INSTALLATION](#installation)
 * [RUNNING THE SYSTEM](#running-the-system)
 * [WALKTHROUGH](#walkthrough)
+* [CLOSING THOUGHTS](#Closing-Thoughts)
 
 ## OVERVIEW
 ### Project: Secure Development Life Cycle
@@ -443,7 +444,7 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
 
 
-## Closing Thoughts 
+## CLOSING THOUGHTS 
 Developer notes looking back at all your work: the challenges, surprises, important achievements you are proud of(if there are any you want to highlight), disappointments(if any),  disclaimers/caveats etc
 
 [Back to table of contents](#table-of-contents)
