@@ -34,8 +34,6 @@ Track the team's progress via Milestones:
 * [Security](https://github.com/softwarewarriors/taskjeeves/projects/2)
 * [First Milestone](https://github.com/softwarewarriors/taskjeeves/projects/4)
 
-![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Landing.JPG)
-
 Task Jeeves is a Meteor application that illustrates:
 
   * A secure web application deployment using Microsoft's Security Development Lifecycle.
