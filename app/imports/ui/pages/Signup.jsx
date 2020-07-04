@@ -69,6 +69,20 @@ class Signup extends React.Component {
     this.setState({ errorConfirm: false });
     this.setState({ error: '' });
 
+    /** confirm fields are valid */
+    if (this.state.firstName.length < 1) {
+      this.setState({ error: 'First name must be filled in.' });
+      return;
+    }
+    if (this.state.lastName.length < 1) {
+      this.setState({ error: 'Last name must be filled in.' });
+      return;
+    }
+    if (this.state.address.length < 1) {
+      this.setState({ error: 'Address must be filled in.' });
+      return;
+    }
+
     if ((errorEmail === false) && (errorPassword === false) && (errorConfirm === false) && (this.state.error === '')) {
       Accounts.createUser({ email, username: email, password }, (err) => {
         if (err) {
@@ -125,7 +139,6 @@ class Signup extends React.Component {
                     type="text"
                     placeholder="First Name"
                     onChange={this.handleChange}
-                    error={this.state.errorEmail}
                 />
                 <Form.Input
                     label="Last Name"
@@ -133,7 +146,6 @@ class Signup extends React.Component {
                     type="text"
                     placeholder="Last Name"
                     onChange={this.handleChange}
-                    error={this.state.errorEmail}
                 />
                 <Form.Input
                     label="Address"
@@ -141,7 +153,6 @@ class Signup extends React.Component {
                     type="text"
                     placeholder="Address"
                     onChange={this.handleChange}
-                    error={this.state.errorEmail}
                 />
                 <Form.Input
                     label="Password"
