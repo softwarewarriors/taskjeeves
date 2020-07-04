@@ -29,6 +29,19 @@ class Signup extends React.Component {
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
     const { email, password, firstName, lastName, address, errorEmail, errorPassword, errorConfirm } = this.state;
+    const writeup =
+      `Terms of Use ("Terms")
+      Last updated: (July 2nd, 2020)
+      
+      Please read the Terms of Use ("Terms", "Terms of Use") located at http://taskjeeves.meteorapp.com/terms 
+      carefully before using the http://taskjeeves.meteorapp.com website (the "Service") operated by 
+      Software Warriors ("us", "we", or "our").
+      
+      Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. 
+      These Terms apply to all visitors, users and others who access or use the Service.
+      
+      By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the 
+      terms then you may not access the Service.`;
 
     /** email validation */
     if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$/.test(email)) {
@@ -84,21 +97,45 @@ class Signup extends React.Component {
     }
 
     if ((errorEmail === false) && (errorPassword === false) && (errorConfirm === false) && (this.state.error === '')) {
-      Accounts.createUser({ email, username: email, password }, (err) => {
-        if (err) {
-          this.setState({ error: err.reason });
-        } else {
-          User.insert({
-            email,
-            firstName,
-            lastName,
-            address,
+      swal({
+        title: 'Terms of Use',
+        text: writeup,
+        closeOnClickOutside: false,
+        closeOnEsc: false,
+        buttons: {
+          cancel: {
+            text: 'Decline',
+            value: false,
+            visible: true,
+            closeModal: true,
           },
-          (error) => {
-            if (error) {
-              swal('Error', error.message, 'error');
+          confirm: {
+            text: 'I Agree',
+            value: true,
+            visible: true,
+            closeModal: true,
+          },
+        },
+      }).then((value) => {
+        if (value) {
+          Accounts.createUser({ email, username: email, password }, (err) => {
+            if (err) {
+              this.setState({ error: err.reason });
             } else {
-              this.setState({ error: '', redirectToReferer: true });
+              swal('Congrats!', 'Your account has been created.', 'success');
+              User.insert({
+                    email,
+                    firstName,
+                    lastName,
+                    address,
+                  },
+                  (error) => {
+                    if (error) {
+                      swal('Error', error.message, 'error');
+                    } else {
+                      this.setState({ error: '', redirectToReferer: true });
+                    }
+                  });
             }
           });
         }

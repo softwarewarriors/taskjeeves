@@ -23,7 +23,8 @@ Check out our portfolios below!
 
 ## DOCUMENTS
 * [Our SDL](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/sdl.pdf)
-* [Assignment One](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/ass1.pdf)
+* [Our Release]()
+* [Our Wiki](https://github.com/softwarewarriors/taskjeeves/wiki)
 
 ## PROGRESS + DEVELOPMENT
 * [Task Jeeves Deployment](https://taskjeeves.meteorapp.com/)
@@ -224,7 +225,6 @@ The goal of this application is to demonstrate a Meteor development providing a 
 - Pending:
     - Add regular expressions to all user input to prevent malicious entries
     - Remove depreciated pages and references from the site
-
     - Have user agree to terms when creating account
     - Address security concerns identified in our Arachni evaluation
     - Implement a way for the user to edit their profile
@@ -275,17 +275,13 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Security testing 
             - Review security/privacy requirements of our app and see if our app has fulfilled them
 
-### Update 6/22/2020 - 6/28/2020
+### Update 6/22/2020 - 7/3/20 RELEASE
 - Progress:
-    - Fixed errors defined by the Static Analysis tool (ESLint)
-
-- Pending:
     - Add regular expressions to all user input to prevent malicious entries
-    - Remove depreciated pages and references from the site
-    - Have user agree to terms when creating account
-    - Address security concerns identified in our Arachni evaluation
-    - Implement a way for the user to edit their profile
-    - Implement a way for the user to change their password
+          - Removed depreciated pages and references from the site
+          - Have user agree to terms when creating account
+          - Address security concerns identified in our Arachni evaluation
+          - Implemented a way for the user to edit their profile
     
 - Roles and Responsibilities:
     - [Darlene Agbayani](https://darleneagbayani.github.io/)
@@ -293,63 +289,20 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Create Wiki page for Task Jeeves   
     - [Julian Kim](https://julianki-cs.github.io/)
         - New Completions:
-            - 
-            -
-            -
-        - Current:
-            - 
-            -
-        - Next:
-            - 
+            - Incidence Response Plan
+            - Managing Final Report Document
+            - Supervising the team
     - [Craig Opie](https://craigopie.github.io/)
         - New Completions:
-            - 
-            -
-            -
-        - Current:
-            - 
-            -
-        - Next:
-            - 
+            - Added to the Wiki page
+            - Removed depreciated pages and references from the site
+            - Helped implement a way for the user to edit their profile
+            - Have user agree to terms when creating account
     - [Joseph Paragas](https://joeparagas.github.io/)
         - New Completions:
             - 
             -
             -
-        - Current:
-            - 
-            -
-        - Next:
-            - 
-## Update 6/22/20 - 7/3/20 RELEASE
-- Responsibilities
-    - Julian Kim
-        - Incidence Response Plan
-        - Managing Final Report Document
-        - Supervising the team   
-    - Craig Opie
-    
-    - Darlene Agbayani
-    
-    - Joseph Paragas
-
-- Technical notes
-    - See INSTALLATION section below
-    
-- Closing thoughts 
-
-- Link to Github repository 
-    - https://github.com/softwarewarriors/taskjeeves
-    
-- Link to Final Project Documentation 
-    - link
-    
-- Link to Release 
-    - link
-    
-- Wiki
-    - link
-
 
 ## INSTALLATION
 First, [install Meteor](https://www.meteor.com/install).
@@ -489,6 +442,8 @@ You click the "Edit" link to go to the Edit Task page, shown next.
 After clicking on the "Edit" link associated with a task, this page displays that allows you to change and save it:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
+
+## Closing Thoughts 
 
 
 [Back to table of contents](#table-of-contents)
