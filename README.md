@@ -443,6 +443,6 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 
 ## CLOSING THOUGHTS 
-You definitely need to put in the same, or maybe even more, amount of focus on the security aspects of your application as you would with the functionality of the pages and the overall aesthetics.  Throughout the creation of this project our team has been tried, tested, and found that we need to make improvements.  However, one surprise and somewhat disappointment that we discovered is that our team was not aware of all the built in features already protecting against the more common vulnerabilities of web applications.  However, this forced us to do additional research outside of the provided classroom assignments and discover modern ways to protect our web application.  
+Software developers definitely need to put in the same, or maybe even more, amount of focus on the security aspects of your application as you would with the functionality of the pages and the overall aesthetics.  Throughout the creation of this project our team has been tried, tested, and found that we need to make improvements.  However, one surprise and somewhat disappointment that we discovered is that our team was not aware of all the built in features already protecting against the more common vulnerabilities of web applications.  However, this forced us to do additional research outside of the provided classroom assignments and discover modern ways to protect our web application.  
 
 [Back to table of contents](#table-of-contents)
