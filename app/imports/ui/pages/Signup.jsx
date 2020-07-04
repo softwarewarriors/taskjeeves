@@ -1,8 +1,12 @@
 import React from 'react';
+import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Container, Form, Grid, Message } from 'semantic-ui-react';
+import swal from 'sweetalert';
 import { Accounts } from 'meteor/accounts-base';
+import { User } from '../../api/user/User';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -12,7 +16,7 @@ class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '', password: '', confirm: '', redirectToReferer: false,
+      email: '', password: '', firstName: '', lastName: '', address: '', confirm: '', redirectToReferer: false,
       errorEmail: false, errorPassword: false, errorConfirm: false, error: '',
     };
   }
@@ -24,7 +28,7 @@ class Signup extends React.Component {
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password, errorEmail, errorPassword, errorConfirm } = this.state;
+    const { email, password, firstName, lastName, address, errorEmail, errorPassword, errorConfirm } = this.state;
 
     /** email validation */
     if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$/.test(email)) {
@@ -70,7 +74,19 @@ class Signup extends React.Component {
         if (err) {
           this.setState({ error: err.reason });
         } else {
-          this.setState({ error: '', redirectToReferer: true });
+          User.insert({
+            email,
+            firstName,
+            lastName,
+            address,
+          },
+          (error) => {
+            if (error) {
+              swal('Error', error.message, 'error');
+            } else {
+              this.setState({ error: '', redirectToReferer: true });
+            }
+          });
         }
       });
     }
@@ -100,6 +116,30 @@ class Signup extends React.Component {
                     name="email"
                     type="email"
                     placeholder="E-mail address"
+                    onChange={this.handleChange}
+                    error={this.state.errorEmail}
+                />
+                <Form.Input
+                    label="First Name"
+                    name="firstName"
+                    type="text"
+                    placeholder="First Name"
+                    onChange={this.handleChange}
+                    error={this.state.errorEmail}
+                />
+                <Form.Input
+                    label="Last Name"
+                    name="lastName"
+                    type="text"
+                    placeholder="Last Name"
+                    onChange={this.handleChange}
+                    error={this.state.errorEmail}
+                />
+                <Form.Input
+                    label="Address"
+                    name="address"
+                    type="text"
+                    placeholder="Address"
                     onChange={this.handleChange}
                     error={this.state.errorEmail}
                 />
@@ -154,4 +194,11 @@ Signup.propTypes = {
   location: PropTypes.object,
 };
 
-export default Signup;
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+export default withTracker(() => {
+  // Get access to User documents.
+  const subscription = Meteor.subscribe('User');
+  return {
+    ready: subscription.ready(),
+  };
+})(Signup);
