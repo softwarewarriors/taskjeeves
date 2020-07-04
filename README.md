@@ -275,6 +275,10 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Review security/privacy requirements of our app and see if our app has fulfilled them
 
 ### Update 6/22/2020 - 7/3/20 RELEASE
+* [Our SDL](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/sdl.pdf)
+* [Our Release](https://github.com/softwarewarriors/taskjeeves/releases/tag/v1.0.0)
+* [Our Wiki](https://github.com/softwarewarriors/taskjeeves/wiki)
+
 - Progress:
     - Add regular expressions to all user input to prevent malicious entries
           - Removed depreciated pages and references from the site
