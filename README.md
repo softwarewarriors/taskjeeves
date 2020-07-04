@@ -23,7 +23,7 @@ Check out our portfolios below!
 
 ## DOCUMENTS
 * [Our SDL](https://github.com/softwarewarriors/softwarewarriors.github.io/tree/master/doc/sdl.pdf)
-* [Our Release]()
+* [Our Release](https://github.com/softwarewarriors/taskjeeves/releases/tag/v1.0.0)
 * [Our Wiki](https://github.com/softwarewarriors/taskjeeves/wiki)
 
 ## PROGRESS + DEVELOPMENT
@@ -300,9 +300,8 @@ The goal of this application is to demonstrate a Meteor development providing a 
             - Have user agree to terms when creating account
     - [Joseph Paragas](https://joeparagas.github.io/)
         - New Completions:
-            - 
-            -
-            -
+            - Updated Readme information
+            - Created project release
 
 ## INSTALLATION
 First, [install Meteor](https://www.meteor.com/install).
@@ -442,6 +441,7 @@ You click the "Edit" link to go to the Edit Task page, shown next.
 After clicking on the "Edit" link associated with a task, this page displays that allows you to change and save it:
 
 ![](https://raw.githubusercontent.com/softwarewarriors/taskjeeves/master/doc/Edit.JPG)
+
 
 ## Closing Thoughts 
 
