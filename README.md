@@ -444,6 +444,6 @@ After clicking on the "Edit" link associated with a task, this page displays tha
 
 
 ## Closing Thoughts 
-
+Developer notes looking back at all your work: the challenges, surprises, important achievements you are proud of(if there are any you want to highlight), disappointments(if any),  disclaimers/caveats etc
 
 [Back to table of contents](#table-of-contents)
